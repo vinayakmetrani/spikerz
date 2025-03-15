@@ -1,0 +1,30 @@
+✅ Step 1: Install Python
+Ensure you have Python 3.7+ installed.
+Check installation by running:
+sh
+CopyEdit
+python --version
+✅ Step 2: Set Up a Virtual Environment (Recommended)
+Run the following commands to create and activate a virtual environment:
+sh
+CopyEdit
+python -m venv selenium_env  # Create virtual environment
+source selenium_env/bin/activate  # Activate (Mac/Linux)
+selenium_env\Scripts\activate  # Activate (Windows)
+✅ Step 3: Install Required Packages
+Install Selenium and WebDriver Manager:
+sh
+CopyEdit
+pip install selenium webdriver-manager
+✅ Step 4: Install and Configure a Web Driver
+Option 1: Use WebDriver Manager (Recommended)
+WebDriver Manager automatically downloads the correct ChromeDriver version.
+
+python
+CopyEdit
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+
+service = Service(ChromeDriverManager().install())  # Auto-download ChromeDriver
+driver = webdriver.Chrome(service=service)
