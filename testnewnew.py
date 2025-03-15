@@ -14,8 +14,8 @@ SOCIAL_CONNECT_URL = f"{BASE_URL}/social-connect"
 # ✅ Credentials
 SPIKERZ_USERNAME = "me"
 SPIKERZ_PASSWORD = "SmipMe123456"
-GOOGLE_EMAIL = "vinayakmetrani1985@gmail.com"
-GOOGLE_PASSWORD = "Anu@123456"
+GOOGLE_EMAIL = "your-email@gmail.com"
+GOOGLE_PASSWORD = "yourpasswrod"
 
 # ✅ Set up Chrome options
 options = webdriver.ChromeOptions()
